@@ -1,13 +1,13 @@
 plugins {
     id 'com.android.application'
+    id 'java'
 }
 
 android {
-    namespace 'com.example.qrcodegenerator'  // 替代旧版 AndroidManifest.xml 中的 package=""
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.qrcodegenerator"
+        applicationId "com.example.qrapp"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -28,17 +28,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    buildFeatures {
-        viewBinding true
-    }
+    namespace 'com.example.qrapp'
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.zxing:core:3.5.1'
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
-    implementation 'com.google.zxing:core:3.5.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
