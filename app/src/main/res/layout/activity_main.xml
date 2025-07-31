@@ -1,31 +1,16 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:background="@android:color/white">
 
-    <EditText
-        android:id="@+id/editTextInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter text to generate QR"
-        android:padding="12dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="16dp" />
-
-    <Button
-        android:id="@+id/buttonGenerate"
+    <TextView
+        android:text="Hello QR App!"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Generate QR Code"
-        android:layout_marginBottom="24dp" />
-
-    <ImageView
-        android:id="@+id/imageViewQR"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:contentDescription="QR Code" />
-
+        android:layout_height="wrap_content"/>
 </LinearLayout>
